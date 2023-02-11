@@ -1,0 +1,29 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: main;
+}
+
+.textboxh1 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 66px;
+}
+
+.textboxh2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.textboxp {
+  font-family: 'Gotu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #000000;
+  margin: auto;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
