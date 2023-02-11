@@ -1,0 +1,54 @@
+body {background-color: #F4B770;}
+
+h1, h2, p {
+  text-align: center;
+  font-family: 'Gotu';
+  font-style: normal;
+  color: #000000;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". main ."
+}
+
+button {
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
+}
+
+.boarder {
+  position: absolute;
+  width: 1389px;
+  left: calc(50% - 1389px/2 - 0.5px);
+  top: 21px;
+  background: #FFFFFF;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.form {
+  height: auto;
+  width: 400px;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 10px;
+  color: #666;
+  padding: 30px 0px;
+  grid-area: main;
+  box-shadow: 2px 2px 2px 4px rgb(0, 0, 0, .25);
+}
