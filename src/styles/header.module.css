@@ -39,3 +39,9 @@
   text-align: center;
   align-self: center;
 }
+
+.lang {
+  position: relative;
+  top: -166px;
+  right: -4px;
+}
