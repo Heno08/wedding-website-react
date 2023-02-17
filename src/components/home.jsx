@@ -1,9 +1,7 @@
 import styles from "../styles/home.module.css";
 import handsphoto from "../images/H&SPhoto.jpg";
-import { useTranslation } from 'react-i18next';
 
-export default function TextBox() {
-  const { t } = useTranslation();
+export default function TextBox({ t }) {
   return (
     <div className={styles.center}>
       <h2 className={styles.textboxh2}>{t("Introduction")}</h2>
