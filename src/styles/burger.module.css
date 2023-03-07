@@ -1,0 +1,70 @@
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+}
+
+.headerbutton {
+  display: none6;
+  font-family: 'Gotu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #000000;
+  justify-self: end;
+  padding-right: 5px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .none {
+    display: none;
+  }
+
+  .block {
+    display: block;
+  }
+
+.headerbutton:hover {
+  text-shadow: 0px 4px 4px #F4B770;
+  cursor: pointer;
+}
+
+.home {
+  text-align: center;
+  align-self: center;
+}
+
+.itinery {
+  text-align: center;
+  align-self: center;
+}
+
+.rsvp {
+  text-align: center;
+  align-self: center;
+}
+
+.lang {
+  position: relative;
+  top: -166px;
+  right: -4px;
+}
+
+.line {
+  width: 2rem;
+  height: 2rem;
+  position: inherit;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+}
+
+.linediv {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #333;
+  border-radius: 10px;
+}
