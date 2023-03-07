@@ -5,6 +5,7 @@ import Home from './components/home';
 import Rsvp from './components/rsvp';
 import OurStory from './components/our-story';
 import { useTranslation } from 'react-i18next';
+import Burger from './components/burger';
 
 export default function App() {
   const { t, i18n } = useTranslation();
@@ -26,7 +27,7 @@ export default function App() {
 
   return (
     <div className={styles.boarder}>
-      <Header  setPage={setPage} setLang={setLang} />
+      <Burger  setPage={setPage} setLang={setLang} />
         <div className={styles.container}>
           {display}
         </div>
