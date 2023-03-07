@@ -6,8 +6,11 @@ import Rsvp from './components/rsvp';
 import OurStory from './components/our-story';
 import { useTranslation } from 'react-i18next';
 import Burger from './components/burger';
+import { down } from 'styled-breakpoints';
+import { useBreakpoint } from "styled-breakpoints/react-styled";
 
 export default function App() {
+  const isMobile = useBreakpoint(down("md"))
   const { t, i18n } = useTranslation();
   let display;
   const [lang, setLang] = useState('');
@@ -15,7 +18,7 @@ export default function App() {
 
   useEffect(() => {
     i18n.changeLanguage(lang)
-  },[lang, i18n])
+  },[lang, i18n]);
 
   if(page === 'home') {
     display = <Home t={t} />
@@ -27,7 +30,7 @@ export default function App() {
 
   return (
     <div className={styles.boarder}>
-      <Burger  setPage={setPage} setLang={setLang} />
+      {isMobile ? <Burger setPage={setPage} setLang={setLang} /> : <Header setPage={setPage} setLang={setLang} />}
         <div className={styles.container}>
           {display}
         </div>
