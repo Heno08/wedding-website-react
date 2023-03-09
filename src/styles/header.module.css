@@ -1,8 +1,3 @@
-.container {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-template-rows: auto;
-}
 
 .headerbutton {
   font-family: 'Gotu';
@@ -23,21 +18,31 @@
 .home {
   text-align: center;
   align-self: center;
+  grid-area: header1;
+}
+
+.ourStory {
+  text-align: center;
+  align-self: center;
+  grid-area: header2;
 }
 
 .logo {
   margin: auto;
   padding: 1px;
+  grid-area: header3;
 }
 
 .itinery {
   text-align: center;
   align-self: center;
+  grid-area: header4;
 }
 
 .rsvp {
   text-align: center;
   align-self: center;
+  grid-area: header5;
 }
 
 .lang {

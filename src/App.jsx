@@ -30,10 +30,10 @@ export default function App() {
 
   return (
     <div className={styles.boarder}>
-      {isMobile ? <Burger setPage={setPage} setLang={setLang} /> : <Header setPage={setPage} setLang={setLang} />}
-        <div className={styles.container}>
-          {display}
-        </div>
+      <div className={styles.container}>
+        {isMobile ? <Burger setPage={setPage} setLang={setLang} /> : <Header setPage={setPage} setLang={setLang} />}
+        {display}
+      </div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ export default function Header({ setPage, setLang }) {
     setLang(e.target.value)
   }
   return (
-    <div className={styles.container}>
+    <>
         <button className={`${styles.home} ${styles.headerbutton}`} onClick={() => setPage('home')}>Home</button>
         <button className={`${styles.ourstory} ${styles.headerbutton}`} onClick={() => setPage('ourstory')}>Our Story</button>
         <img src={Logo} alt="logo" className={styles.logo} />
@@ -19,6 +19,6 @@ export default function Header({ setPage, setLang }) {
               <option value="fr">French</option>
             </select>
           </span>
-    </div>
+    </>
   );
 }
