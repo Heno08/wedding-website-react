@@ -11,10 +11,12 @@ h1, h2, p {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas:
     "header1 header2 header3 header4 header5"
-    ". . main  . ."
+    ". . main . ."
+    ". pic2 main pic1 ."
+    ". pic2 main pic3 ."
 }
 
 @media (max-width: 768px) {
