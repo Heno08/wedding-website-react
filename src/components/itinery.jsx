@@ -1,28 +1,28 @@
-export default function Itinery() {
+export default function Itinery( { t } ) {
   return(
     <div>
-      <h1>Itinery</h1>
-      <p>The theme of our wedding will be around 'Travel'. As such we would like to share a trip with you to mark our marriage:</p>
-      <h2>Ceremony</h2>
-        <p>Ceremony will take place at Castle Rushen. Please arrive for 2.30PM</p>
-        <p>The dress code will be smart casual</p>
-        <p>After the ceremony there will be time for some drink and some photos in the Castle Gardens</p>
-      <h2>Train Ride</h2>
-        <p>We will the aim to catch the 4.37 train from Castletown to Port Erin. We have resevered carriges on the train, but it will not wait for us!</p>
-        <p>There will be a bus to shuttle people from the Castle to the Station, but you are weclome to drive.</p>
-      <h2>Reception</h2>
-        <p>The start time for the recption 5.30pm at Foraging Vintners</p>
-        <p>We will start with some welcome drink (the iconic FV Fizz) and some Manx tapas (coutersy of Wild Thyme)</p>
-        <p>The planned start time for the speeches is:</p>
-        <p>Afterwards there will be a buffet (again thanks to Wild Thyme) before cake cutting and dancing!</p>
-        <p>The evening will be a free bar, excluding shots and cocktails, but you are more than welcome to buy these yourself</p>
-      <h2>Wedding Gift List</h2>
-        <p>Your presence at our wedding is more important to us than a gift, however if you would like to help contribute some money towards our honeymoon, this would really make our day!</p>
-        <p>Our honeymoon account is:</p>
-          <p>Name:</p>
+      <h1>{t("Itinery")}</h1>
+      <p>{t("Theme")}</p>
+      <h2>{t("Ceremony")}</h2>
+        <p>{t("Ceremony1")}</p>
+        <p>{t("Ceremony2")}</p>
+        <p>{t("Ceremony3")}</p>
+      <h2>{t("Train Ride")}</h2>
+        <p>{t("Train Ride1")}</p>
+        <p>{t("Train Ride2")}</p>
+      <h2>{t("Reception")}</h2>
+        <p>{t("Reception1")}</p>
+        <p>{t("Reception2")}</p>
+        <p>{t("Reception3")}</p>
+        <p>{t("Reception4")}</p>
+        <p>{t("Reception5")}</p>
+      <h2>{t("Wedding Gift List")}</h2>
+        <p>{t("Wedding Gift List1")}</p>
+        <p>{t("Wedding Gift List2")}</p>
+          <p>{t("Name")}</p>
           <p>IBAN: IBAN4511</p>
           <p>BIC: </p>
-        <p>There will also be the oportunity to make a donation at the reception.</p>
+        <p>{t("Wedding Gift List3")}</p>
     </div>
   )
 }

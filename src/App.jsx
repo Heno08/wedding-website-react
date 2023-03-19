@@ -28,7 +28,7 @@ export default function App() {
   } else if (page === 'ourstory') {
     display = <OurStory t={t} />
   } else if (page === 'itinery') {
-    display = <Itinery />
+    display = <Itinery t={t} />
   }
 
   return (
