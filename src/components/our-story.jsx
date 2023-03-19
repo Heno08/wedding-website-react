@@ -16,3 +16,5 @@ export default function OurStory( { t }) {
     </>
   )
 }
+
+// Bigger picture, justify text, gap between picture and text, bigger text/ line spacing (less blocky)

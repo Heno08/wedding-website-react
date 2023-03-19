@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import Burger from './components/burger';
 import { down } from 'styled-breakpoints';
 import { useBreakpoint } from "styled-breakpoints/react-styled";
+import Itinery from './components/itinery';
 
 export default function App() {
   const isMobile = useBreakpoint(down("md"))
@@ -26,7 +27,9 @@ export default function App() {
     display = <Rsvp />
   } else if (page === 'ourstory') {
     display = <OurStory t={t} />
-  };
+  } else if (page === 'itinery') {
+    display = <Itinery t={t} />
+  }
 
   return (
     <div className={styles.boarder}>
