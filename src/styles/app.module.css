@@ -1,7 +1,6 @@
 body {background-color: #F4B770;}
 
 h1, h2, p {
-  text-align: center;
   font-family: 'Gotu';
   font-style: normal;
   color: #000000;
@@ -11,12 +10,14 @@ h1, h2, p {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas:
     "header1 header2 header3 header4 header5"
-    ". . main . ."
-    ". pic2 main pic1 ."
-    ". pic2 main pic3 ."
+    ". item1 main item10 ."
+    ". item2 main2 item3 ."
+    ". item4 main3 item5 ."
+    ". item6 main4 item7 ."
+    ". item8 main5 item9 ."
 }
 
 @media (max-width: 768px) {

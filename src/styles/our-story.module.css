@@ -2,21 +2,21 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  grid-area: main;
-  width: 700px;
+  grid-column-start: item1;
+  grid-column-end: main;
 }
 
 .pic1 {
   max-width: 150px;
-  grid-area: pic1;
+  grid-area: item1;
 }
 
 .pic2 {
   max-width: 150px;
-  grid-area: pic2;
+  grid-area: item3;
 }
 
 .pic3 {
   max-width: 150px;
-  grid-area: pic3;
+  grid-area: item5;
 }

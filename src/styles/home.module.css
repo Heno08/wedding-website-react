@@ -1,8 +1,10 @@
 .center {
+  text-align: center !important;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  grid-area: main;
+  grid-column-start: item1;
+  grid-column-end: item10;
 }
 
 .textboxh1 {
