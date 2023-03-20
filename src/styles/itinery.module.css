@@ -1,0 +1,48 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: item1;
+}
+
+.itinery {
+  grid-column-start: item1;
+  grid-column-end: main;
+  text-align: center;
+}
+
+.ceremony {
+  grid-area: main2;
+}
+
+.trainRide {
+  grid-area: item4;
+}
+
+.reception {
+  grid-area: main4;
+}
+
+.weddingGiftList {
+  grid-area: item8;
+}
+
+.ceremonyPic {
+  grid-area: item2;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.trainRidePic {
+  grid-area: main3;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.receptionPic {
+  grid-area: item6;
+}
+
+.weddingGiftListPic {
+  grid-area: main5;
+}
