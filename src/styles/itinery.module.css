@@ -41,6 +41,7 @@
 
 .receptionPic {
   grid-area: item6;
+  max-width: 280px;
 }
 
 .weddingGiftListPic {

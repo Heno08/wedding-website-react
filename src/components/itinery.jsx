@@ -1,5 +1,6 @@
 import styles from "../styles/itinery.module.css";
-import castle from "../images/Castle.png";
+import reception from "../images/FV-Wedding.jpg"
+import castle from "../images/CR-wedding.jpg";
 import trainRide from "../images/TrainRide.png";
 
 export default function Itinery( { t } ) {
@@ -30,7 +31,7 @@ export default function Itinery( { t } ) {
           <p>{t("Reception4")}</p>
           <p>{t("Reception5")}</p>
       </div>
-      <img alt="Reception" className={styles.receptionPic}/>
+      <img alt="Reception" className={styles.receptionPic} src={reception}/>
       <div className={styles.weddingGiftList}>
         <h2>{t("Wedding Gift List")}</h2>
           <p>{t("Wedding Gift List1")}</p>
