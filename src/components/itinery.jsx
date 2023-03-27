@@ -1,6 +1,4 @@
 import styles from "../styles/itinery.module.css";
-import castle from "../images/Castle.png";
-import trainRide from "../images/TrainRide.png";
 
 export default function Itinery( { t } ) {
   return(
@@ -15,13 +13,13 @@ export default function Itinery( { t } ) {
           <p>{t("Ceremony2")}</p>
           <p>{t("Ceremony3")}</p>
       </div>
-      <img alt="Ceremony" className={styles.ceremonyPic} src={castle}/>
+      <div className={styles.ceremonyPic}></div>
       <div className={styles.trainRide}>
         <h2>{t("Train Ride")}</h2>
           <p>{t("Train Ride1")}</p>
           <p>{t("Train Ride2")}</p>
       </div>
-      <img alt="Train Ride" className={styles.trainRidePic} src={trainRide}/>
+      <div className={styles.trainRidePic}></div>
       <div className={styles.reception}>
         <h2>{t("Reception")}</h2>
           <p>{t("Reception1")}</p>
@@ -30,7 +28,7 @@ export default function Itinery( { t } ) {
           <p>{t("Reception4")}</p>
           <p>{t("Reception5")}</p>
       </div>
-      <img alt="Reception" className={styles.receptionPic}/>
+      <div className={styles.receptionPic}></div>
       <div className={styles.weddingGiftList}>
         <h2>{t("Wedding Gift List")}</h2>
           <p>{t("Wedding Gift List1")}</p>
@@ -40,7 +38,6 @@ export default function Itinery( { t } ) {
             <p>BIC: </p>
           <p>{t("Wedding Gift List3")}</p>
       </div>
-      <img alt="Wedding Gift List" className={styles.weddingGiftListPic}/>
     </>
   )
 }

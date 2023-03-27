@@ -3,20 +3,35 @@
   margin-left: auto;
   margin-right: auto;
   grid-column-start: item1;
-  grid-column-end: main;
+  grid-column-end: item5;
 }
 
 .pic1 {
-  max-width: 150px;
-  grid-area: item1;
+  background-image: url('../images/Bruges-Trip.jpg');
+  background-size: cover;
+  box-sizing: border-box;
+  background-origin: content-box;
+  height: 10rem;
+  width: 12rem;
+  grid-area: item6;
 }
 
 .pic2 {
-  max-width: 150px;
-  grid-area: item3;
+  background-image: url('../images/Lake-D.jpeg');
+  background-size: cover;
+  box-sizing: border-box;
+  background-origin: content-box;
+  height: 10rem;
+  width: 12rem;
+  grid-area: main4;
 }
 
 .pic3 {
-  max-width: 150px;
-  grid-area: item5;
+  background-image: url('../images/Vienna-Palace.jpg');
+  background-size: cover;
+  box-sizing: border-box;
+  background-origin: content-box;
+  height: 10rem;
+  width: 12rem;
+  grid-area: item7;
 }
