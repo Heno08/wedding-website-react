@@ -1,49 +1,87 @@
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  grid-area: item1;
+h2 {
+  margin-top: 0;
 }
 
 .itinery {
   grid-column-start: item1;
-  grid-column-end: main;
+  grid-column-end: item10;
   text-align: center;
+  padding: 5px;
 }
 
 .ceremony {
-  grid-area: main2;
+  grid-area: item3;
+  padding: 5px;
 }
 
 .trainRide {
   grid-area: item4;
+  padding: 5px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .trainRide {
+    margin-bottom: 0;
+  }
 }
 
 .reception {
-  grid-area: main4;
+  grid-area: item7;
+  padding: 5px;
 }
 
 .weddingGiftList {
-  grid-area: item8;
+  grid-column-start: item8;
+  grid-column-end: item9;
+  text-align: center;
+  padding: 5px;
 }
 
 .ceremonyPic {
-  grid-area: item2;
-  max-width: 100%;
-  max-height: 100%;
+  background-image: url('../images/CR-wedding.jpg');
+  background-size: cover;
+  box-sizing: border-box;
+  grid-column-start: item2;
+  grid-column-end: main2;
+
 }
 
+@media (max-width: 768px) {
+  .ceremonyPic {
+    min-width: 18.75rem;
+    min-height: 12.5rem;
+  }
+}
+
+
 .trainRidePic {
-  grid-area: main3;
-  max-width: 100%;
-  max-height: 100%;
+  background-image: url('../images/TrainRide.jpg');
+  background-size: cover;
+  box-sizing: border-box;
+  background-origin: content-box;
+  grid-column-start: main3;
+  grid-column-end: item5;
+}
+
+@media (max-width: 768px) {
+  .trainRidePic {
+    min-width: 18.75rem;
+    min-height: 12.5rem;
+  }
 }
 
 .receptionPic {
-  grid-area: item6;
-  max-width: 280px;
+  background-image: url('../images/FV-Wedding.jpg');
+  background-size: cover;
+  box-sizing: border-box;
+  grid-column-start: item6;
+  grid-column-end: main4;
 }
 
-.weddingGiftListPic {
-  grid-area: main5;
+@media (max-width: 768px) {
+  .receptionPic {
+    min-width: 18.75rem;
+    min-height: 12.5rem;
+  }
 }

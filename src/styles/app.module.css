@@ -9,6 +9,7 @@ h1, h2, p {
 .container {
   overflow: hidden;
   display: grid;
+  row-gap: 15px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas:
@@ -21,8 +22,14 @@ h1, h2, p {
 }
 
 @media (max-width: 768px) {
+  .ceremonyPic {
+    min-width: 300px;
+    min-height: 100px;
+  }
+
   .container {
     display: block;
+    overflow: scroll;
   }
 }
 
