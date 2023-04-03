@@ -34,8 +34,9 @@ export default function Itinery( { t } ) {
           <p>{t("Wedding Gift List1")}</p>
           <p>{t("Wedding Gift List2")}</p>
             <p>{t("Name")}</p>
-            <p>IBAN: IBAN4511</p>
-            <p>BIC: </p>
+            <p>IBAN: LT593250091681685151</p>
+            <p>BIC: REVOLT21</p>
+            <p>Suggested note: Wedding Gift</p>
           <p>{t("Wedding Gift List3")}</p>
       </div>
     </>
