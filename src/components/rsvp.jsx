@@ -22,6 +22,7 @@ export default function Rsvp() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    alert(`Submitted!`);
     const token = await recaptchaRef.current.executeAsync();
     const params ={
       ...rsvp,
