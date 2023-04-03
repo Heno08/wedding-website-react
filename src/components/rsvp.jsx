@@ -12,6 +12,8 @@ export default function Rsvp() {
     train_ride: ''
   });
 
+  const siteKey = process.env.REACT_APP_SITE_KEY
+
   const recaptchaRef = useRef();
 
   const handleChange = (e) => {
@@ -70,7 +72,7 @@ export default function Rsvp() {
             <button className={styles.rsvpbutton} type="submit" >
               Accept
             </button>
-            <ReCAPTCHA sitekey='6LdubVQlAAAAAFwZyvn-ux9xP-jdeKh1oT69kthK' size="invisible" ref={recaptchaRef}/>
+            <ReCAPTCHA sitekey={siteKey} size="invisible" ref={recaptchaRef}/>
         </form>
       </div>
     </div>
