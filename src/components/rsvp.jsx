@@ -1,5 +1,5 @@
 import styles from"../styles/rsvp.module.css";
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { send } from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -12,18 +12,23 @@ export default function Rsvp() {
     train_ride: ''
   });
 
-  const recaptchaRef = React.useRef<ReCAPTCHA>(null);
+  const recaptchaRef = useRef();
 
   const handleChange = (e) => {
     setRsvp({ ...rsvp, [e.target.name]: e.target.value})
   };
 
-  const onSubmitRSVP = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const token = await recaptchaRef.current.executeAsync();
+    const params ={
+      ...rsvp,
+      'g-recaptcha-response' : token
+    }
     send(
       'service_703r399',
       'template_hq3e513',
-      rsvp,
+      params,
       'h8oK2XY2XyBeeghVb',
       'g-recaptcha-response'
     )
@@ -39,7 +44,7 @@ export default function Rsvp() {
   <>
     <div className={styles.form}>
       <div className={styles.info}>
-        <form id="demo-form" action="?" method="POST" onSubmit={onSubmitRSVP}>
+        <form method="POST" onSubmit={handleSubmit}>
           <h1>RSVP</h1>
           <h2>for the wedding of</h2>
           <h1>Henry & Sebastien</h1>
