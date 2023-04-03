@@ -10,6 +10,7 @@
     "i18next": "^22.4.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^2.1.0",
     "react-i18next": "^12.1.5",
     "react-scripts": "5.0.1",
     "styled-breakpoints": "^11.1.1",
