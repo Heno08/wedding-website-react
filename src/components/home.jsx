@@ -1,13 +1,13 @@
 import styles from "../styles/home.module.css";
-import handsphoto from "../images/H&SPhoto.jpg";
+import hands from "../images/H&SPhoto.jpg"
 
 export default function TextBox({ t }) {
   return (
-    <div className={styles.center}>
-      <h2 className={styles.textboxh2}>{t("Introduction")}</h2>
-      <h1 className={styles.textboxh1}>Henry and Sebastien</h1>
-      <h2 className={styles.textboxh2}>28 July 2023</h2>
-      <img alt="henry&seb" src={handsphoto}/>
-    </div>
+    <>
+      <h2 className={`${styles.textbox1} ${styles.center}`}>{t("Introduction")}</h2>
+      <h1 className={`${styles.textbox2} ${styles.center}`}>Henry and Sebastien</h1>
+      <h2 className={`${styles.textbox3} ${styles.center}`}>28 July 2023</h2>
+      <img src={hands} alt="Henry & Seb" className={styles.mainimg} />
+    </>
   )
 }
