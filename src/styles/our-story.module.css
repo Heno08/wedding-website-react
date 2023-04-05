@@ -2,32 +2,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: justify;
   grid-column-start: item1;
   grid-column-end: item5;
 }
 
-.pic1 {
-  display: block;
-  height: 100px;
-  width: 100px;
-}
-
-.pic2 {
-  background-image: url('../images/Lake-D.jpeg');
-  background-size: cover;
-  box-sizing: border-box;
-  background-origin: content-box;
-  height: 10rem;
-  width: 12rem;
+.carousel {
   grid-area: main4;
-}
-
-.pic3 {
-  background-image: url('../images/Vienna-Palace.jpg');
-  background-size: cover;
-  box-sizing: border-box;
-  background-origin: content-box;
-  height: 10rem;
-  width: 12rem;
-  grid-area: item7;
 }
