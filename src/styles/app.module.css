@@ -10,8 +10,8 @@ h1, h2, p {
   overflow: hidden;
   display: grid;
   row-gap: 15px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: minmax(55px, auto) minmax(55px, auto) minmax(55px, auto) minmax(55px, auto) minmax(55px, auto) minmax(55px, auto);
   grid-template-areas:
     "header1 header2 header3 header4 header5"
     ". item1 main item10 ."

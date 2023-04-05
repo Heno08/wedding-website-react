@@ -1,22 +1,26 @@
 .center {
-  text-align: center !important;
+  text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  grid-column-start: item1;
-  grid-column-end: item10;
 }
 
-.textboxh1 {
+.textbox1 {
   font-weight: 400;
   font-size: 40px;
-  line-height: 66px;
+  grid-area: main;
 }
 
-.textboxh2 {
+.textbox2 {
   font-weight: 400;
   font-size: 22px;
-  line-height: 27px;
+  grid-area: main2;
+}
+
+.textbox3 {
+  font-weight: 400;
+  font-size: 22px;
+  grid-area: main3;
 }
 
 .textboxp {
@@ -24,8 +28,16 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 27px;
   color: #000000;
   margin: auto;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainimage {
+  background-image: url('../images/H&SPhoto.jpg');
+  background-size: cover;
+  height: 50vh;
+  width: 80vw;
+  grid-column-start: item6;
+  grid-column-end: item7;
 }
