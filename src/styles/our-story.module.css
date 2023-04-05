@@ -7,13 +7,9 @@
 }
 
 .pic1 {
-  background-image: url('../images/Bruges-Trip.jpg');
-  background-size: cover;
-  box-sizing: border-box;
-  background-origin: content-box;
-  height: 10rem;
-  width: 12rem;
-  grid-area: item6;
+  display: block;
+  height: 100px;
+  width: 100px;
 }
 
 .pic2 {
