@@ -28,14 +28,6 @@ export default function OurStory( { t }) {
           </div>
         </Carousel>
       </div>
-      {/* <div className={[styles.pic1]}></div>
-      <div className={[styles.pic2]}></div>
-      <div className={[styles.pic3]}></div> */}
-      {/* <img alt="Bruges Trip" src={brugesTrip} className={[styles.pic1]}/>
-      <img alt="Lake District" src={lakeDistrict} className={[styles.pic2]}/>
-      <img alt="Lake District" src={vienna} className={[styles.pic3]}/> */}
     </>
   )
 }
-
-// Bigger picture, justify text, gap between picture and text, bigger text/ line spacing (less blocky)

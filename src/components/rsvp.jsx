@@ -51,12 +51,12 @@ export default function Rsvp() {
           <h1>RSVP</h1>
           <h2>for the wedding of</h2>
           <h1>Henry & Sebastien</h1>
-            <p className= "line">________________________________________</p>
+            <p className={styles.line}>_________________________________</p>
             <p><u>Friday July 28 2023</u></p>
             <p>Ceremony - 2:30pm</p>
             <p>Train Ride - 4:30pm</p>
             <p>Reception - 5:00pm</p>
-            <p className= "line">________________________________________</p>
+            <p className={styles.line}>_________________________________</p>
             <input type="email" name="email" className={styles.input} placeholder="Contact Email" onChange={handleChange}></input>
             <input type="text" name="name" placeholder="Name" onChange={handleChange} className={styles.input}></input>
             <label className={styles.input} htmlFor="guest_name">Will you be bringing a guest? </label>
