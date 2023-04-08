@@ -3,7 +3,7 @@ import React, { useState, useRef } from 'react';
 import { send } from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
 
-export default function Rsvp() {
+export default function Rsvp({ setPage }) {
   const [rsvp,  setRsvp] = useState({
     email: '',
     name: '',
@@ -22,7 +22,8 @@ export default function Rsvp() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    alert(`Submitted!`);
+    alert(`Submitted! Please make take a look at the Itinery for the day :)`);
+    setPage('itinery')
     const token = await recaptchaRef.current.executeAsync();
     const params ={
       ...rsvp,
@@ -41,6 +42,9 @@ export default function Rsvp() {
       .catch((err) => {
         console.log('FAILED...', err);
       });
+      // .then(() => {
+      //   setPage('itinery')
+      // })
   };
 
   return (
