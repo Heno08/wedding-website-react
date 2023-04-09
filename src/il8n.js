@@ -15,14 +15,14 @@ const resources = {
       "Ceremony" : "Ceremony",
       "Ceremony1": "Ceremony will take place at Castle Rushen. Please arrive for 2.30PM",
       "Ceremony2": "The dress code will be smart casual",
-      "Ceremony3": "After the ceremony there will be time for some drink and some photos in the Castle Gardens",
+      "Ceremony3": "After the ceremony there will be time for some drinks and some photos in the Castle Gardens",
       "Train Ride": "Train Ride",
       "Train Ride1": "We will the aim to catch the 4.37 train from Castletown to Port Erin. We have resevered carriges on the train, but it will not wait for us!",
       "Train Ride2": "There will be a bus to shuttle people from the Castle to the Station, but you are weclome to drive.",
       "Reception": "Reception",
-      "Reception1": "The start time for the recption 5.30pm at Foraging Vintners",
-      "Reception2": "We will start with some welcome drink (the iconic FV Fizz) and some Manx tapas (coutersy of Wild Thyme)",
-      "Reception3": "The planned start time for the speeches is:",
+      "Reception1": "The start time for the recption 5.30pm at",
+      "Reception2": "We will start with some welcome drinks (the iconic FV Fizz) and some Manx tapas (coutersy of",
+      "Reception3": "The planned start time for the speeches is: 6.30pm",
       "Reception4": "Afterwards there will be a buffet (again thanks to Wild Thyme) before cake cutting and dancing!",
       "Reception5": "The evening will be a free bar, excluding shots and cocktails, but you are more than welcome to buy these yourself",
       "Wedding Gift List": "Wedding Gift List",
@@ -30,6 +30,7 @@ const resources = {
       "Wedding Gift List2": "Our honeymoon account is:",
       "Name": "Name",
       "Wedding Gift List3": "There will also be the oportunity to make a donation at the reception.",
+      "Wedding Gift List4": "Suggested note: Wedding Gift"
     }
   },
   fr: {
@@ -47,9 +48,9 @@ const resources = {
       "Train Ride1": "Nous prendrons le train de 16h37 de Castletown à Port Erin. Nous avons réservé des tickets pour ce train, mais il ne nous attendra pas !",
       "Train Ride2": "Un bus fera la navette entre le château et la gare, mais vous pouvez aussi conduire si vous préférez.",
       "Reception": "Réception",
-      "Reception1": "L'heure de début de la réception est fixée à 17h30 au Foraging Vintners.",
-      "Reception2": "Nous commencerons par une drink de bienvenue (l'emblématique FV Fizz) et des tapas mannoises (grâce à Wild Thyme).",
-      "Reception3": "Nous poursuivrons avec les discours à",
+      "Reception1": "L'heure de début de la réception est fixée à 17h30 au",
+      "Reception2": "Nous commencerons par une drink de bienvenue (l'emblématique FV Fizz) et des tapas mannoises (grâce à",
+      "Reception3": "Nous poursuivrons avec les discours à 6h30.",
       "Reception4": "Il y aura ensuite un buffet chaud et froid (toujours grâce à Wild Thyme) avant la découpe du gâteau et le dancefloor !",
       "Reception5": "Un bar gratuit pour toute la soirée, à l'exclusion des shots et des cocktails. Vous pouvez cependant en acheter vous-même si vous le souhaitez.",
       "Wedding Gift List": "Liste de mariage",
@@ -57,6 +58,7 @@ const resources = {
       "Wedding Gift List2": "Notre compte est :",
       "Name": "Nom :",
       "Wedding Gift List3": "Il sera également possible de faire un don lors de la réception.",
+      "Wedding Gift List4": "Suggestion de communication : Cadeau de mariage"
     }
   }
 };
