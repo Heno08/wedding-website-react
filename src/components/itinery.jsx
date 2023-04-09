@@ -22,8 +22,8 @@ export default function Itinery( { t } ) {
       <div className={styles.trainRidePic}></div>
       <div className={styles.reception}>
         <h2>{t("Reception")}</h2>
-          <p>{t("Reception1")}</p>
-          <p>{t("Reception2")}</p>
+          <p>{t("Reception1")} <a href="https://www.foragingvintners.com/" target="_blank" rel="noreferrer">Foraging Vintners</a>.</p>
+          <p>{t("Reception2")} <a href="https://www.wildthymeiom.co.uk/" target="_blank" rel="noreferrer">Wild Thyme</a>).</p>
           <p>{t("Reception3")}</p>
           <p>{t("Reception4")}</p>
           <p>{t("Reception5")}</p>
@@ -36,7 +36,7 @@ export default function Itinery( { t } ) {
             <p>{t("Name")}</p>
             <p>IBAN: LT593250091681685151</p>
             <p>BIC: REVOLT21</p>
-            <p>Suggested note: Wedding Gift</p>
+            <p>{t("Wedding Gift List4")}</p>
           <p>{t("Wedding Gift List3")}</p>
       </div>
     </>
