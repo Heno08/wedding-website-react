@@ -22,8 +22,6 @@ export default function Rsvp({ setPage }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    alert(`Submitted! Please make take a look at the Itinery for the day :)`);
-    setPage('itinery')
     const token = await recaptchaRef.current.executeAsync();
     const params ={
       ...rsvp,
@@ -38,13 +36,13 @@ export default function Rsvp({ setPage }) {
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
+        alert("Sucsess")
+        setPage('itinery')
       })
       .catch((err) => {
         console.log('FAILED...', err);
+        alert("Submission failed, please try again")
       });
-      // .then(() => {
-      //   setPage('itinery')
-      // })
   };
 
   return (
