@@ -4,6 +4,7 @@ import { send } from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Rsvp({ setPage }) {
+  const [loading, setLoading] = useState(false)
   const [rsvp,  setRsvp] = useState({
     email: '',
     name: '',
@@ -22,6 +23,7 @@ export default function Rsvp({ setPage }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true)
     const token = await recaptchaRef.current.executeAsync();
     const params ={
       ...rsvp,
@@ -37,48 +39,51 @@ export default function Rsvp({ setPage }) {
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         alert("Sucsess")
+        setLoading(false)
         setPage('itinery')
       })
       .catch((err) => {
         console.log('FAILED...', err);
-        alert("Submission failed, please try again")
+        alert("Submission failed, please")
       });
   };
 
   return (
   <>
-    <div className={styles.form}>
-      <div className={styles.info}>
-        <form method="POST" onSubmit={handleSubmit}>
-          <h1>RSVP</h1>
-          <h2>for the wedding of</h2>
-          <h1>Henry & Sebastien</h1>
-            <p className={styles.line}>_________________________________</p>
-            <p><u>Friday July 28 2023</u></p>
-            <p>Ceremony - 2:30pm</p>
-            <p>Train Ride - 4:30pm</p>
-            <p>Reception - 5:00pm</p>
-            <p className={styles.line}>_________________________________</p>
-            <input type="email" name="email" className={styles.input} placeholder="Contact Email" onChange={handleChange}></input>
-            <input type="text" name="name" placeholder="Name" onChange={handleChange} className={styles.input}></input>
-            <label className={styles.input} htmlFor="guest_name">Will you be bringing a guest? </label>
-            <input type="text" name="guest_name" placeholder="Guest Name" onChange={handleChange} className={styles.input}></input>
-            <label className={styles.input} htmlFor="dietry_requirments">Please state any dietry requirments </label>
-            <input type="text" name="dietry_requirments" placeholder="None" onChange={handleChange} className={styles.input}></input>
-            <label>Will you be joining us on the train? </label>
-            <br />
-            <label htmlFor="train_ride">Yes</label>
-            <input type="checkbox" name="train_ride" value="yes" onChange={handleChange} ></input>
-            <br />
-            <label>No - I will make my own way to the reception</label>
-            <input type="checkbox" name="train_ride" value="no" onChange={handleChange} ></input>
-            <button className={styles.rsvpbutton} type="submit" >
-              Accept
-            </button>
-            <ReCAPTCHA sitekey={siteKey} size="invisible" ref={recaptchaRef}/>
-        </form>
+    {loading ? <p>Loading...</p> :
+      <div className={styles.form}>
+        <div className={styles.info}>
+          <form method="POST" onSubmit={handleSubmit}>
+            <h1>RSVP</h1>
+            <h2>for the wedding of</h2>
+            <h1>Henry & Sebastien</h1>
+              <p className={styles.line}>_________________________________</p>
+              <p><u>Friday July 28 2023</u></p>
+              <p>Ceremony - 2:30pm</p>
+              <p>Train Ride - 4:30pm</p>
+              <p>Reception - 5:00pm</p>
+              <p className={styles.line}>_________________________________</p>
+              <input type="email" name="email" className={styles.input} placeholder="Contact Email" onChange={handleChange}></input>
+              <input type="text" name="name" placeholder="Name" onChange={handleChange} className={styles.input}></input>
+              <label className={styles.input} htmlFor="guest_name">Will you be bringing a guest? </label>
+              <input type="text" name="guest_name" placeholder="Guest Name" onChange={handleChange} className={styles.input}></input>
+              <label className={styles.input} htmlFor="dietry_requirments">Please state any dietry requirments </label>
+              <input type="text" name="dietry_requirments" placeholder="None" onChange={handleChange} className={styles.input}></input>
+              <label>Will you be joining us on the train? </label>
+              <br />
+              <label htmlFor="train_ride">Yes</label>
+              <input type="checkbox" name="train_ride" value="yes" onChange={handleChange} ></input>
+              <br />
+              <label>No - I will make my own way to the reception</label>
+              <input type="checkbox" name="train_ride" value="no" onChange={handleChange} ></input>
+              <button className={styles.rsvpbutton} type="submit" >
+                Accept
+              </button>
+              <ReCAPTCHA sitekey={siteKey} size="invisible" ref={recaptchaRef}/>
+          </form>
+        </div>
       </div>
-    </div>
+    }
   </>
   )
 };
