@@ -20,12 +20,6 @@ h2 {
   margin-bottom: 100px;
 }
 
-@media (max-width: 768px) {
-  .trainRide {
-    margin-bottom: 0;
-  }
-}
-
 .reception {
   grid-area: item7;
   padding: 5px;
@@ -39,49 +33,24 @@ h2 {
 }
 
 .ceremonyPic {
-  background-image: url('../images/CR-wedding.jpg');
-  background-size: cover;
-  box-sizing: border-box;
+  width: 100%;
+  align-self: center;
   grid-column-start: item2;
   grid-column-end: main2;
 
 }
 
-@media (max-width: 768px) {
-  .ceremonyPic {
-    min-width: 18.75rem;
-    min-height: 12.5rem;
-  }
-}
-
 
 .trainRidePic {
-  background-image: url('../images/TrainRide.jpg');
-  background-size: cover;
-  box-sizing: border-box;
-  background-origin: content-box;
+  width: 100%;
+  align-self: center;
   grid-column-start: main3;
   grid-column-end: item5;
 }
 
-@media (max-width: 768px) {
-  .trainRidePic {
-    min-width: 18.75rem;
-    min-height: 12.5rem;
-  }
-}
-
 .receptionPic {
-  background-image: url('../images/FV-Wedding.jpg');
-  background-size: cover;
-  box-sizing: border-box;
+  width: 100%;
+  align-self: center;
   grid-column-start: item6;
   grid-column-end: main4;
-}
-
-@media (max-width: 768px) {
-  .receptionPic {
-    min-width: 18.75rem;
-    min-height: 12.5rem;
-  }
 }

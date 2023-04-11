@@ -28,7 +28,7 @@ const resources = {
       "Wedding Gift List": "Wedding Gift List",
       "Wedding Gift List1": "Your presence at our wedding is more important to us than a gift, however if you would like to help contribute some money towards our honeymoon, this would really make our day!",
       "Wedding Gift List2": "Our honeymoon account is:",
-      "Name": "Name",
+      "Name": "Name:",
       "Wedding Gift List3": "There will also be the oportunity to make a donation at the reception.",
       "Wedding Gift List4": "Suggested note: Wedding Gift"
     }
