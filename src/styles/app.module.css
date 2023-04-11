@@ -17,19 +17,27 @@ h1, h2, p {
     ". item1 main item10 ."
     ". item2 main2 item3 ."
     ". item4 main3 item5 ."
-    ". item6 main4 item7 ."
+    ". item6 main4 item7 item11"
     ". item8 main5 item9 ."
 }
 
 @media (max-width: 768px) {
-  .ceremonyPic {
-    min-width: 300px;
-    min-height: 100px;
-  }
-
   .container {
     display: block;
     overflow: scroll;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+      "header1 header2 header3 header4 header5"
+      "item1 item1 main item10 item10"
+      "item2 item2 main2 item3 item3"
+      "item4 item4 main3 item5 item5"
+      "item6 item6 main4 item7 item7"
+      "item8 item8 main5 item9 item9"
   }
 }
 
@@ -48,12 +56,6 @@ button {
   margin: 10px;
   background: #ffffffe8;
 }
-
-/* .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-} */
 
 .form {
   height: auto;
