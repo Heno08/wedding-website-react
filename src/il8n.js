@@ -30,7 +30,17 @@ const resources = {
       "Wedding Gift List2": "Our honeymoon account is:",
       "Name": "Name:",
       "Wedding Gift List3": "There will also be the oportunity to make a donation at the reception.",
-      "Wedding Gift List4": "Suggested note: Wedding Gift"
+      "Wedding Gift List4": "Suggested note: Wedding Gift",
+      "for the wedding of": "for the wedding of",
+      "Ceremony - 2:30pm" : "Ceremony - 2:30pm",
+      "Train Ride - 4:30pm" : "Train Ride - 4:30pm",
+      "Reception - 5:00pm" : "Reception - 5:00pm",
+      "Will you be bringing a guest?": "Will you be bringing a guest?",
+      "Please state any dietry requirments" : "Please state any dietry requirments",
+      "Will you be joining us on the train?": "Will you be joining us on the train?",
+      "Yes" :"Yes",
+      "No - I will make my own way to the reception" : "No - I will make my own way to the reception",
+      "Accept" : "Accept"
     }
   },
   fr: {
@@ -58,7 +68,17 @@ const resources = {
       "Wedding Gift List2": "Notre compte est :",
       "Name": "Nom :",
       "Wedding Gift List3": "Il sera également possible de faire un don lors de la réception.",
-      "Wedding Gift List4": "Suggestion de communication : Cadeau de mariage"
+      "Wedding Gift List4": "Suggestion de communication : Cadeau de mariage",
+      "for the wedding of": "pour le mariage de",
+      "Ceremony - 2:30pm" : "Cérémonie - 14h30",
+      "Train Ride - 4:30pm" : "Voyage en train - 16h30",
+      "Reception - 5:00pm" : "Réception - 17h",
+      "Will you be bringing a guest?" : "Vous venez avec un invité ?",
+      "Please state any dietry requirments" : "Veuillez indiquer vos besoins en matière de régime alimentaire.",
+      "Will you be joining us on the train?" : "Vous nous rejoindrez dans le train ?",
+      "Yes" :"Oui",
+      "No - I will make my own way to the reception" : "Non, je me rendrai à la réception par mes propres moyens.",
+      "Accept" : "Accepter"
     }
   }
 };
