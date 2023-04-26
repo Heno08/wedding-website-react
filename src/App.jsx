@@ -24,7 +24,7 @@ export default function App() {
   if(page === 'home') {
     display = <Home t={t} />
   } else if (page === 'rsvp') {
-    display = <Rsvp setPage={setPage} />
+    display = <Rsvp setPage={setPage} t={t} />
   } else if (page === 'ourstory') {
     display = <OurStory t={t} />
   } else if (page === 'itinery') {
