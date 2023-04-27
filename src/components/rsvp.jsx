@@ -57,17 +57,17 @@ export default function Rsvp({ setPage, t }) {
           <h2>{t("for the wedding of")}</h2>
           <h1>Henry & Sebastien</h1>
             <p className={styles.line}>_________________________________</p>
-            <p><u>Friday July 28 2023</u></p>
+            <p><u>{t("Friday July 28 2023")}</u></p>
             <p>{t("Ceremony - 2:30pm")}</p>
             <p>{t("Train Ride - 4:30pm")}</p>
             <p>{t("Reception - 5:00pm")}</p>
             <p className={styles.line}>_________________________________</p>
             <input type="email" name="email" className={styles.input} placeholder="Contact Email" onChange={handleChange}></input>
-            <input type="text" name="name" placeholder="Name" onChange={handleChange} className={styles.input}></input>
+            <input type="text" name="name" placeholder={t("Name")} onChange={handleChange} className={styles.input}></input>
             <label className={styles.input} htmlFor="guest_name">{t("Will you be bringing a guest?")} </label>
-            <input type="text" name="guest_name" placeholder="Guest Name" onChange={handleChange} className={styles.input}></input>
+            <input type="text" name="guest_name" placeholder={t("Guest Name")} onChange={handleChange} className={styles.input}></input>
             <label className={styles.input} htmlFor="dietry_requirments">{t("Please state any dietry requirments")}</label>
-            <input type="text" name="dietry_requirments" placeholder="None" onChange={handleChange} className={styles.input}></input>
+            <input type="text" name="dietry_requirments" placeholder={t("None")} onChange={handleChange} className={styles.input}></input>
             <label>{t("Will you be joining us on the train?")}</label>
             <br />
             <label htmlFor="train_ride">{t("Yes")}</label>
