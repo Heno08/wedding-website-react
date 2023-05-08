@@ -37,7 +37,7 @@ export default function Itinery( { t } ) {
           <p>{t("Wedding Gift List1")}</p>
           <p>{t("Wedding Gift List2")}</p>
             <p>{t("Name")} Sebastien Bar</p>
-            <p>IBAN: LT593250091681685151</p>
+            <p>IBAN: LT593250091681685141</p>
             <p>BIC: REVOLT21</p>
             <p>{t("Wedding Gift List4")}</p>
           <p>{t("Wedding Gift List3")}</p>
@@ -45,4 +45,3 @@ export default function Itinery( { t } ) {
     </>
   )
 }
-// justify text, arrage for heading then picture, picture then heading
